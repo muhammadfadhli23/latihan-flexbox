@@ -1,0 +1,145 @@
+html, body{
+  margin : 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  line-height: 1.65;
+  padding-bottom: 1000px;
+}
+
+/* Latihan 1 */
+.container-satu {
+  width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.kolom-utama{
+  flex: 3;
+  order: 2;
+
+}
+
+.sidebar-satu{
+  flex: 1;
+  order: 1;
+
+}
+
+.sidebar-dua{
+  flex: 1;
+  order: 3;
+
+}
+
+/* Latihan dua */
+.container-dua {
+  max-width: 800px;
+  margin: 50px auto;
+  
+  
+}
+
+.layanan {
+  
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.layanan.satu{ background-color: rgb(81, 81, 245);}
+.layanan.dua{ background-color: rgb(231, 72, 72);}
+.layanan.tiga{ background-color: rgb(10, 245, 10);}
+
+/* Latihan 3 */
+.container-tiga {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnails {
+  width: 50%;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.thumbnails img{
+  width: 100%;
+}
+
+/* Latihan 4 */
+.container-empat {
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+}
+.card {
+  border: 2px solid #333;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  margin: 6px;
+  text-align: center;
+}
+.header {
+  height: 200px;
+  background-color: #555;
+}
+
+.card.dua{
+  transform: scale(1.1);
+}
+
+/* Latihan 5 */
+.container-lima {
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.kotak {
+  width: 500px;
+  height: 500px;
+  border: 5px solid #333;
+  margin: auto;
+  display: flex;
+}
+.kotak div{
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  margin: auto;
+  display: flex;
+}
+
+.kotak div span{
+  text-align: center;
+  margin: auto;
+}
+
+/* responsive */
+@media(min-width: 600px){
+.container-dua{
+  display: flex;
+  justify-content: space-between;
+}
+
+.layanan {
+  width:30%;
+}
+
+.thumbnails {
+  width: 25%;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+}
